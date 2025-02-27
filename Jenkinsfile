@@ -4,7 +4,8 @@ pipeline {
         stage('Code') {
             steps {
                 echo 'Cloning Repository'
-                git 'https://github.com/Spandana115/python-flask-app.git'
+                git branch: 'main', url: 'https://github.com/Spandana115/python-flask-app.git'
+
             }
         }
 
